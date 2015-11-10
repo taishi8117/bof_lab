@@ -5,9 +5,10 @@
 
 
 void vuln (const char* arg){
-	char string[100];
-	strcpy(string, arg);
-	printf("Hello %s\n", string);
+	char buffer[100];
+	strcpy(buffer, arg);
+	printf("Hello %s\n", buffer);
+	printf("[+] buffer @ %p\n", buffer);
 }		/* -----  end of function vuln  ----- */
 
 int main (int argc, char **argv){

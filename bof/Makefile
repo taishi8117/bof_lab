@@ -1,5 +1,6 @@
 CC=gcc
-CFLAGS=-m32 -std=c99 -Wall -fno-stack-protector
+#CFLAGS=-m32 -std=c99 -Wall -fno-stack-protector	# for x64
+CFLAGS=-std=c99 -Wall -fno-stack-protector -z execstack
 
 all: bof
 

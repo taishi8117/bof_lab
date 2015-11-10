@@ -1,5 +1,6 @@
 CC=gcc
-CFLAGS=-m32 -std=c99 -Wall
+#CFLAGS=-m32 -std=c99 -Wall		# for x86_64
+CFLAGS=-std=c99 -Wall
 
 all: pass_change
 
