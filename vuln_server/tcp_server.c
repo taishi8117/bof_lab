@@ -17,6 +17,7 @@ void vuln_read(int cli_fd) {
   char buffer[BUFFER_SIZE];
 
   // read 4 bytes to get how many bytes to read
+  // assuming that incoming header is in little endian
   int to_read;
   read(cli_fd, &to_read, HEADER_SIZE);
   printf("Will read %d bytes\n", to_read);
